@@ -14,7 +14,7 @@ Naufal Faadhilah | 5025201221 |
 
 ### Topologi dan Konfigurasi
 
-<img src="https://user-images.githubusercontent.com/70790033/201673879-0dcfcf52-5d9c-4c33-8209-d036f5bc97f5.png" width="800">
+<img src="https://user-images.githubusercontent.com/70790033/201673879-0dcfcf52-5d9c-4c33-8209-d036f5bc97f5.png" width="500">
 
 #### Konfigurasi Ostania
 ```bash
@@ -212,6 +212,12 @@ subnet 192.201.1.0 netmask 255.255.255.0 {
     option domain-name-servers 192.201.2.2;
 ```
 
+Memeriksa IP di client SSS yang terhubung melalui Switch 1
+
+<img src="https://user-images.githubusercontent.com/70790033/201709852-488e52d2-8902-4b1a-a92b-69550900fcf2.png" width="500">
+
+Terlihat bahwa alamat IP-nya adalah 192.201.1.53 yang masuk ke dalam range 192.201.1.50 hingga 192.201.1.88
+
 ## Soal 4
 Mengatur range IP di /etc/dhcp/dhcpd.conf untuk client yang melalui Switch3. Pengaturan dilakukan dari Westalis yang merupakan DHCP Server. 
 ```bash
@@ -222,6 +228,19 @@ subnet 192.201.3.0 netmask 255.255.255.0 {
     option broadcast-address 192.201.3.255;
     option domain-name-servers 192.201.2.2; # ref ke WISE
 ```
+
+Memeriksa IP di client NewstonCastle yang terhubung melalui Switch 3
+
+<img src="https://user-images.githubusercontent.com/70790033/201710299-3cd03692-19c5-4db4-9ac3-3a1007bb3873.png" width="500">
+
+Terlihat bahwa alamat IP-nya adalah 192.201.3.13 yang masuk ke dalam range 192.201.3.10 hingga 192.201.3.30
+
+## Soal 5
+### Menghubungkan client ke internet melalui WISE
+<img src="https://user-images.githubusercontent.com/70790033/201711097-3062fb53-0966-4ec9-b423-ed2f18c805f3.png" width="500">
+<img src="https://user-images.githubusercontent.com/70790033/201711400-750a9be9-ebf5-4aed-8469-0e5dc3dd9af6.png" width="500">
+
+Terlihat bahwa client seperti Garden dan KemonoPark dapat mengakses internet.
 
 ## Soal 6
 Menambahkan default-lease-time dan max-lease-time ke /etc/dhcp/dhcpd.conf.
@@ -260,7 +279,10 @@ hardware ethernet 12:34:56:78:9a:bc;
 fixed-address 192.201.3.13;
 }
 ```
+
 Untuk memeriksa apakah IP sudah tetap, dapat dijalankan command ```ip a``` di Eden.
+
+<img src="https://user-images.githubusercontent.com/70790033/201710666-61b69cf4-13ab-4236-9ec2-f6a1986aacae.png" width="500">
 
 ## Soal 8
 Menambahkan konfigurasi waktu akses client di Squid, melalui file /etc/squid/acl.conf dan /etc/squid/squid.conf
