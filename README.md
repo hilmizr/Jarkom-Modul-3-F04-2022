@@ -290,3 +290,6 @@ visible_hostname Berlint
 - Westalis - ```westalis.sh```
 - Eden - ```eden.sh```
 
+## Kendala
+- Teman saya Naufal Faadhilah tidak dapat menjalankan command `ping google.com` dari Ostania tanpa sebab yang diketahui.
+
