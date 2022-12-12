@@ -3,9 +3,9 @@
 # Anggota
 Nama | NRP | Kontribusi |
 --- | --- | --- |
-Hilmi Zharfan Rachmadi | 5025201268 |  |
+Hilmi Zharfan Rachmadi | 5025201268 | Topologi, Konfigurasi, soal no 1-3, Lapres |
 Ida Bagus Kade Rainata Putra Wibawa | 5025201235 | Mengerjakan soal no 3-8 |
-Naufal Faadhilah | 5025201221 |  |
+Naufal Faadhilah | 5025201221 | Lapres bagian kendala |
 
 # Jawaban
 ## Soal 1
